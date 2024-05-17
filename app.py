@@ -20,12 +20,12 @@ st.set_page_config(page_title="Q&A Demo")
 st.title("Langchain application1")
 
 key = st.text_input("Auth-token", key='password', type='password')
-input = st.text_input("Input:",key='input')
+input1 = st.text_input("Input:",key='input')
 
 # response=get_openai_response(key, input)
 
 submit=st.button("Ask question")
 
-if submit and key:
+if submit and input1 and key:
     st.subheader("The response is:")
     st.write(get_openai_response(key, input))
