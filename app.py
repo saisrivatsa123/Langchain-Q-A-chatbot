@@ -10,7 +10,7 @@ os.environ['OPENAI_API_KEY'] = os.getenv('OPENAI_API_KEY')
 
 def get_openai_response(question):
     # llm = Ollama(model= 'llama3-chatqa')
-    llm = ChatOpenAI(model='gpt-3.5-turbo-instruct')
+    llm = ChatOpenAI(model='babbage-002')
     return llm(question)
 
 #initialize streamlit app
